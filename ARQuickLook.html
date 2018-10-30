@@ -2,8 +2,11 @@
 <html>
 <head>
     	<title>AR Library</title>
-	<script>
-		window.location.href = 'teapot.usdz';
+	
+	<script type="text/javascript">
+		$(function(){
+    		window.location.href = $('.className').attr('href');
+		});
 	</script>
 </head>
 
@@ -11,7 +14,7 @@
     <h1>Welcome to the AR Library</h1>
     <p>Welcome to the AR Library website. I created this website in order to view AR objects from the web on any device running iOS 12. Conincidentally, this is the first time I made a website with HTML! It's a lot of fun!</p>
 	
-	<a href="teapot.usdz" rel="ar">
+	<a class="className" href="teapot.usdz" rel="ar">
 	    <img src="teapot.png" width=200>
 	</a>
 </body>
